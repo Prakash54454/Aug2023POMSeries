@@ -19,6 +19,8 @@ public class LoginPage {
 	private By forgotPwdLink = By.linkText("Forgotten Password");
 	private By logo = By.cssSelector("img[title='naveenopencart']");
 	private By registerLink = By.linkText("Register");
+	private By informationHeader = By.xpath("//h5[text()='Information']");
+	private By customerServiceHeader = By.xpath("//h5[normalize-space()='Customer Service']");
 
 	public LoginPage(WebDriver driver) {
 
@@ -41,32 +43,37 @@ public class LoginPage {
 		return url;
 
 	}
-	
-	public boolean isForgotPwdLinkExist()
-	{
+
+	public boolean isForgotPwdLinkExist() {
 		return eleUtil.waitForVisibilityOfElement(forgotPwdLink, AppConstants.SHORT_DEFAULT_WAIT).isDisplayed();
 	}
-	
-	public boolean isLogoExist()
-	{
+
+	public boolean isLogoExist() {
 		return eleUtil.waitForVisibilityOfElement(logo, AppConstants.SHORT_DEFAULT_WAIT).isDisplayed();
 	}
-	
-	
-	public AccountsPage doLogin(String username, String pwd)
-	{
+
+	public AccountsPage doLogin(String username, String pwd) {
 		eleUtil.waitForVisibilityOfElement(userName, AppConstants.SHORT_DEFAULT_WAIT).sendKeys(username);
 		eleUtil.dosendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);
-		
+
 		return new AccountsPage(driver);
 	}
 
-	
-	public RegisterPage navigateToRegisterPage()
-	{
+	public RegisterPage navigateToRegisterPage() {
 		eleUtil.waitForVisibilityOfElement(registerLink, AppConstants.SHORT_DEFAULT_WAIT).click();
-		
+
 		return new RegisterPage(driver);
 	}
+	
+	public boolean isInformationHeaderExist()
+	{
+		return eleUtil.waitForVisibilityOfElement(informationHeader, AppConstants.SHORT_DEFAULT_WAIT).isDisplayed();
+	}
+	
+	public boolean iscustomerServiceHeaderExist()
+	{
+		return eleUtil.waitForVisibilityOfElement(customerServiceHeader, AppConstants.SHORT_DEFAULT_WAIT).isDisplayed();
+	}
+	
 }

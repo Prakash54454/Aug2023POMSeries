@@ -30,7 +30,7 @@ public class BaseTest {
 
 	protected SoftAssert softAssert;
 
-	@BeforeMethod
+	
 	@BeforeTest
 	public void setUp() {
 		df = new DriverFactory();
@@ -40,7 +40,7 @@ public class BaseTest {
 		softAssert = new SoftAssert();
 	}
 
-	@AfterMethod
+	
 	@AfterTest
 	public void tearDown() {
 		driver.quit();

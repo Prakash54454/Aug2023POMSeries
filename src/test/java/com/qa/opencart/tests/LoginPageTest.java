@@ -15,7 +15,7 @@ public class LoginPageTest extends BaseTest {
 	public void loginPageTitleTest()
 	{
 		String actTitle = loginPage.getLoginPageTitle();
-		AssertJUnit.assertEquals(actTitle, AppConstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actTitle, AppConstants.LOGIN_PAGE_TITLE);
 		
 	}
 	
@@ -23,26 +23,40 @@ public class LoginPageTest extends BaseTest {
 	public void loginPageURLTest()
 	{
 		String actURL =loginPage.getLoginPageURL();
-		AssertJUnit.assertTrue(actURL.contains(AppConstants.LOGIN_PAGE_URL_FRACTION));
+		Assert.assertTrue(actURL.contains(AppConstants.LOGIN_PAGE_URL_FRACTION));
 	}
 	
 	@Test(priority=3)
 	public void forgotPwdLinkExistTest()
 	{
-		AssertJUnit.assertTrue(loginPage.isForgotPwdLinkExist());
+		Assert.assertTrue(loginPage.isForgotPwdLinkExist());
 	}
 	
 	@Test(priority=4)
 	public void appLogoExistTest()
 	{
-		AssertJUnit.assertTrue(loginPage.isLogoExist());
+		Assert.assertTrue(loginPage.isLogoExist());
 	}
 	
+	
 	@Test(priority=5)
+	public void informationExistTest()
+	{
+		Assert.assertTrue(loginPage.isInformationHeaderExist());
+	}
+	
+	
+	@Test(priority=6)
+	public void customerService()
+	{
+		Assert.assertTrue(loginPage.iscustomerServiceHeaderExist());
+	}
+	
+	@Test(priority=7)
 	public void loginTest()
 	{
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
-		AssertJUnit.assertTrue(accPage.isLogoutLinkExist());
+		Assert.assertTrue(accPage.isLogoutLinkExist());
 	}
 
 }
