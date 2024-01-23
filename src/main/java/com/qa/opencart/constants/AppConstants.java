@@ -21,14 +21,24 @@ public class AppConstants {
 
 	public static final int POLLING_DEFAULT_WAIT = 2;
 
-	public static final int ACCOUNT_PAGE_HEADER_COUNT = 2;
+	
+	public static final int ACCOUNTS_PAGE_HEADERS_COUNT = 4;
 
-	public static final List<String> ACCOUNT_PAGE_HEADER_LIST = Arrays.asList("My Account", "My Orders",
+	public static final List<String> ACCOUNTS_PAGE_HEADERS_LIST = Arrays.asList("My Account", "My Orders",
 			"My Affiliate Account", "Newsletter");
 
 	public static final String USER_REGISTRATION_SUCCESS_MESSAGE = "Your Account Has Been Created!";
 
 	public static final String REGISTER_DATA_SHEET_NAME = "register";
 	public static final String PRODUCT_DATA_SHEET_NAME = "product";
+	
+	
+	public static final List<String> FOOTER_PAGE_INFORMATION_LINK = Arrays.asList("About Us", "Delivery Information",
+			"Privacy Policy", "Terms & Conditions");
+	public static final List<String> FOOTER_PAGE_CUSTOMER_SERVICE_LINK = Arrays.asList("Contact Us", "Returns",
+			"Site Map");
+	
+	public static final String LOGIN_ERROR_MESSAGE= "Warning: No match for E-Mail Address and/or Password.";
+			
 
 }

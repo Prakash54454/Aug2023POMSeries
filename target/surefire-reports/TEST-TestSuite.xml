@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="22.658" tests="33" errors="0" skipped="9" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/prakash/Downloads/apache-maven-3.9.3/boot/plexus-classworlds-2.7.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="maven.conf" value="/Users/prakash/Downloads/apache-maven-3.9.3/conf"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Denv=prod"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/Users/prakash/Downloads/apache-maven-3.9.3"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/prakash"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
+    <property name="user.name" value="prakash"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/l2/yc1w_ppd06l4mpkzzpzw5czm0000gn/T/"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="/Users/prakash/eclipse-workspace/Aug2023POMSeries"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/prakash/eclipse-workspace/Aug2023POMSeries"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env" value="prod"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/prakash/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
+    <property name="classworlds.conf" value="/Users/prakash/Downloads/apache-maven-3.9.3/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/Users/prakash/Downloads/apache-maven-3.9.3/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.01"/>
+  <testcase name="loginPageURLTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.01"/>
+  <testcase name="forgotPwdLinkExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.032"/>
+  <testcase name="appLogoExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.019"/>
+  <testcase name="informationExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.02"/>
+  <testcase name="customerService" classname="com.qa.opencart.tests.LoginPageTest" time="0.018"/>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.931"/>
+  <testcase name="accPageHeadersCountTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.058"/>
+  <testcase name="accPageHeadersTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.039"/>
+  <testcase name="accPageHeadersTestSort" classname="com.qa.opencart.tests.AccountsPageTest" time="0.038"/>
+  <testcase name="accPageTitleTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.006"/>
+  <testcase name="accPageURLTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.006"/>
+  <testcase name="footercustomerServiceLinkTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.034"/>
+  <testcase name="footerinformationLinkTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.04"/>
+  <testcase name="isLogoutLinkExist" classname="com.qa.opencart.tests.AccountsPageTest" time="0.019"/>
+  <testcase name="isSearchFieldExist" classname="com.qa.opencart.tests.AccountsPageTest" time="0.016"/>
+  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.983"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="2.225"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.461"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.732"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.269"/>
+  <testcase name="productInfoTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.173"/>
+  <testcase name="setUp" classname="com.qa.opencart.tests.RegisterPageTest" time="1.26">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
+</failure>
+    <system-out><![CDATA[env name is: prod
+The browsername is Firefox
+]]></system-out>
+  </testcase>
+  <testcase name="regSetup" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+  </testcase>
+  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+  </testcase>
+  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0.004">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
+</failure>
+    <system-out><![CDATA[env name is: prod
+The browsername is Edge
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

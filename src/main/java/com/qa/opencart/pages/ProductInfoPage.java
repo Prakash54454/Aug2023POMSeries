@@ -1,5 +1,6 @@
 package com.qa.opencart.pages;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -27,6 +28,8 @@ public class ProductInfoPage {
 	private By productImages = By.cssSelector("ul.thumbnails img");
 	private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[1]/li");
 	private By productPriceData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[2]/li");
+	
+	private By informationFooterLinks = By.xpath("//div[@class='col-sm-3']/h5[contains(.,'Information')]/following-sibling::ul/li");
 
 	// private Map<String, String> productMap = new HashMap<String, String>();
 	// private Map<String, String> productMap = new LinkedHashMap<String, String>();
@@ -85,4 +88,6 @@ public class ProductInfoPage {
 		return productMap;
 	}
 
+	
+	
 }

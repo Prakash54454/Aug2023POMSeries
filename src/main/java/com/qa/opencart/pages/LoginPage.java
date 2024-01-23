@@ -21,6 +21,8 @@ public class LoginPage {
 	private By registerLink = By.linkText("Register");
 	private By informationHeader = By.xpath("//h5[text()='Information']");
 	private By customerServiceHeader = By.xpath("//h5[normalize-space()='Customer Service']");
+	
+	private By loginErrorMessage = By.cssSelector("div.alert.alert-danger.alert-dismissible");
 
 	public LoginPage(WebDriver driver) {
 
@@ -53,12 +55,36 @@ public class LoginPage {
 	}
 
 	public AccountsPage doLogin(String username, String pwd) {
+		System.out.println("creds are: " + username + " : " + pwd);
+		System.out.println("#####Prakash######");
 		eleUtil.waitForVisibilityOfElement(userName, AppConstants.SHORT_DEFAULT_WAIT).sendKeys(username);
 		eleUtil.dosendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);
 
 		return new AccountsPage(driver);
 	}
+	
+	
+	public boolean doLoginwithNegativeCredentials(String username, String pwd) {
+		eleUtil.waitForVisibilityOfElement(userName, AppConstants.MEDIUM_DEFAULT_WAIT).clear();
+		eleUtil.waitForVisibilityOfElement(userName, AppConstants.SHORT_DEFAULT_WAIT).sendKeys(username);
+		eleUtil.waitForVisibilityOfElement(password, AppConstants.MEDIUM_DEFAULT_WAIT).clear();
+		eleUtil.dosendKeys(password, pwd);
+		eleUtil.doClick(loginBtn);
+
+		eleUtil.waitForVisibilityOfElement(loginErrorMessage, AppConstants.MEDIUM_DEFAULT_WAIT);
+		
+		String errorMessage = eleUtil.doElementGetText(loginErrorMessage);
+		
+		System.out.println(errorMessage);
+		
+		if(errorMessage.contains(AppConstants.LOGIN_ERROR_MESSAGE))
+		{
+			return true;
+		}
+		return false;
+	}
+	
 
 	public RegisterPage navigateToRegisterPage() {
 		eleUtil.waitForVisibilityOfElement(registerLink, AppConstants.SHORT_DEFAULT_WAIT).click();

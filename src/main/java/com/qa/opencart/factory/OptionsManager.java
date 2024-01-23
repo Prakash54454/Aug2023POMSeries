@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.safari.SafariOptions;
 
 public class OptionsManager {
 
@@ -12,6 +13,7 @@ public class OptionsManager {
 	private ChromeOptions co;
 	private FirefoxOptions fo;
 	private EdgeOptions eo;
+	private SafariOptions so;
 
 	public OptionsManager(Properties prop) {
 		this.prop = prop;
@@ -61,5 +63,22 @@ public class OptionsManager {
 		return eo;
 
 	}
+	
+	
+	public SafariOptions getSafariOption() {
+		so = new SafariOptions();
+
+		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
+			co.addArguments("--headless");
+		}
+
+		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
+			co.addArguments("--incognito");
+		}
+
+		return so;
+
+	}
+
 
 }

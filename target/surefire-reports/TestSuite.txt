@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 2, Errors: 0, Skipped: 9, Time elapsed: 22.658 s <<< FAILURE! - in TestSuite
+setUp(com.qa.opencart.tests.RegisterPageTest)  Time elapsed: 1.26 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
+
+setUp(com.qa.opencart.tests.LoginPageNegativeTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
+
