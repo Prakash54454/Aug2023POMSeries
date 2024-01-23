@@ -1,6 +1,7 @@
 package com.qa.opencart.tests;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
 
@@ -12,12 +13,15 @@ import java.util.Map.Entry;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
+import com.qa.opencart.listeners.TestAllureListener;
 import com.qa.opencart.utils.ExcelUtil;
 
+@Listeners(TestAllureListener.class)
 public class ProuctResultsPageTest extends BaseTest {
 
 	@BeforeClass

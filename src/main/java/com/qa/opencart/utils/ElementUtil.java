@@ -22,6 +22,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.opencart.exception.FrameworkException;
 
+import io.qameta.allure.Step;
+
 public class ElementUtil {
 
 	private static WebDriver driver;
@@ -69,6 +71,7 @@ public class ElementUtil {
 
 	}
 
+	@Step("entering value {1} to element: {0}")
 	public static void dosendKeys(By locator, String value) {
 		getElement(locator).sendKeys(value);
 	}
@@ -85,6 +88,7 @@ public class ElementUtil {
 
 	}
 
+	@Step("clicking on element : {0}")
 	public void doClick(By locator) {
 		getElement(locator).click();
 	}
@@ -367,6 +371,7 @@ public class ElementUtil {
 		 * @param timeOut
 		 * @return
 		 */
+		@Step("waiting for element: {0} with timeout {1}")
 		public WebElement waitForVisibilityOfElement(By locator, int timeOut) {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 			return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -430,6 +435,7 @@ public class ElementUtil {
 
 		}
 
+		@Step("waiting for the page title : {0} and titmeout: {1}")
 		public String waitForTitleIs(String title, int timeOut) {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 
@@ -445,6 +451,7 @@ public class ElementUtil {
 
 		}
 
+		@Step("waiting for url : {0} and timeout{1}")
 		public String waitForURLContains(String urlFraction, int timeOut) {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="22.658" tests="33" errors="0" skipped="9" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="178.512" tests="37" errors="0" skipped="9" failures="3">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -60,67 +60,132 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.01"/>
-  <testcase name="loginPageURLTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.01"/>
-  <testcase name="forgotPwdLinkExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.032"/>
-  <testcase name="appLogoExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.019"/>
-  <testcase name="informationExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.02"/>
-  <testcase name="customerService" classname="com.qa.opencart.tests.LoginPageTest" time="0.018"/>
-  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.931"/>
-  <testcase name="accPageHeadersCountTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.058"/>
-  <testcase name="accPageHeadersTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.039"/>
-  <testcase name="accPageHeadersTestSort" classname="com.qa.opencart.tests.AccountsPageTest" time="0.038"/>
-  <testcase name="accPageTitleTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.006"/>
-  <testcase name="accPageURLTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.006"/>
-  <testcase name="footercustomerServiceLinkTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.034"/>
-  <testcase name="footerinformationLinkTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.04"/>
-  <testcase name="isLogoutLinkExist" classname="com.qa.opencart.tests.AccountsPageTest" time="0.019"/>
-  <testcase name="isSearchFieldExist" classname="com.qa.opencart.tests.AccountsPageTest" time="0.016"/>
-  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.983"/>
-  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="2.225"/>
-  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.461"/>
-  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.732"/>
-  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.269"/>
-  <testcase name="productInfoTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="1.173"/>
-  <testcase name="setUp" classname="com.qa.opencart.tests.RegisterPageTest" time="1.26">
-    <failure message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
-</failure>
-    <system-out><![CDATA[env name is: prod
-The browsername is Firefox
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.019"/>
+  <testcase name="loginPageURLTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.008"/>
+  <testcase name="forgotPwdLinkExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.036"/>
+  <testcase name="appLogoExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.038"/>
+  <testcase name="informationExistTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.018"/>
+  <testcase name="customerService" classname="com.qa.opencart.tests.LoginPageTest" time="0.017"/>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="2.059"/>
+  <testcase name="accPageHeadersCountTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.077"/>
+  <testcase name="accPageHeadersTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.042"/>
+  <testcase name="accPageHeadersTestSort" classname="com.qa.opencart.tests.AccountsPageTest" time="0.039"/>
+  <testcase name="accPageTitleTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.005"/>
+  <testcase name="accPageURLTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.004"/>
+  <testcase name="footercustomerServiceLinkTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.033"/>
+  <testcase name="footerinformationLinkTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.042"/>
+  <testcase name="isLogoutLinkExist" classname="com.qa.opencart.tests.AccountsPageTest" time="0.02"/>
+  <testcase name="isSearchFieldExist" classname="com.qa.opencart.tests.AccountsPageTest" time="0.015"/>
+  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.876"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="0.787"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="0.601"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="0.632"/>
+  <testcase name="productImagesTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="0.597"/>
+  <testcase name="productInfoTest" classname="com.qa.opencart.tests.ProuctResultsPageTest" time="0.585"/>
+  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="2.246"/>
+  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="2.285"/>
+  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="2.18"/>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[Test Suite is ending!
+Test Suite started!
+env name is: prod
+The browsername is chrome
+loginTest started!
+loginTest skipped!
 ]]></system-out>
+    <system-err><![CDATA[Jan 23, 2024 7:11:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
   </testcase>
-  <testcase name="regSetup" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
-  </testcase>
-  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
-  </testcase>
-  <testcase name="userRegTest" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
-  </testcase>
-  <testcase name="tearDown" classname="com.qa.opencart.tests.RegisterPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0.004">
-    <failure message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
-</failure>
-    <system-out><![CDATA[env name is: prod
-The browsername is Edge
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
 ]]></system-out>
   </testcase>
   <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="10.706">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+</failure>
+    <system-out><![CDATA[loginTest started!
+loginTest failed!
+]]></system-out>
   </testcase>
   <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
   </testcase>
   <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null"/>
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
   </testcase>
-  <testcase name="tearDown" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
-    <skipped/>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="10.686">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+</failure>
+    <system-out><![CDATA[loginTest started!
+loginTest failed!
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06"/>
+    <system-out><![CDATA[loginTest started!
+loginTest skipped!
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageNegativeTest" time="10.693">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 446bfc8000bb2e3e5778a00f4bad1a06" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+</failure>
+    <system-out><![CDATA[loginTest started!
+loginTest failed!
+]]></system-out>
   </testcase>
 </testsuite>

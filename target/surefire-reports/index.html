@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Opencart App Test Regression Suite</span>
+              <span class="suite-name border-failed">Opencart App Test Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,15 +92,69 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods,  6 skipped,  22 passed</span>
+                    <span class="method-stats">37 methods, 3 failed,  9 skipped,  25 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="hide-methods failed suite-Opencart_App_Test_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Opencart_App_Test_Regression_Suite -->
+                      <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="show-methods failed suite-Opencart_App_Test_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Opencart_App_Test_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Opencart_App_Test_Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username5, username@123)">loginTest(username5, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username4, username@123)">loginTest(username4, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username6, username@123)">loginTest(username6, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Opencart_App_Test_Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
                     <span class="show-or-hide-methods skipped">
                       <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="hide-methods skipped suite-Opencart_App_Test_Regression_Suite"> (hide)</a> <!-- hide-methods skipped suite-Opencart_App_Test_Regression_Suite -->
                       <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="show-methods skipped suite-Opencart_App_Test_Regression_Suite"> (show)</a> <!-- show-methods skipped suite-Opencart_App_Test_Regression_Suite -->
                     </span>
                     <div class="method-list-content skipped suite-Opencart_App_Test_Regression_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username5, username@123)">loginTest(username5, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username4, username@123)">loginTest(username4, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username4, username@123)">loginTest(username4, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username5, username@123)">loginTest(username5, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username6, username@123)">loginTest(username6, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username6, username@123)">loginTest(username6, username@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username4, username@123)">loginTest(username4, username@123)</a> <!-- method navigator-link -->
@@ -114,21 +168,6 @@
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.LoginPageNegativeTest" class="method navigator-link" hash-for-method="loginTest(username5, username@123)">loginTest(username5, username@123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegTest(Karishma, automation, 9876544434, test@123, no)">userRegTest(Karishma, automation, 9876544434, test@123, no)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegTest(Rahul, yadav, 9876543233, test@123, yes)">userRegTest(Rahul, yadav, 9876543233, test@123, yes)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegTest(Jyothi, auto, 9876522234, test@123, yes)">userRegTest(Jyothi, auto, 9876522234, test@123, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Opencart_App_Test_Regression_Suite -->
@@ -250,6 +289,21 @@
                         <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.AccountsPageTest" class="method navigator-link" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegTest(Rahul, yadav, 9876543233, test@123, yes)">userRegTest(Rahul, yadav, 9876543233, test@123, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegTest(Jyothi, auto, 9876522234, test@123, yes)">userRegTest(Jyothi, auto, 9876522234, test@123, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegTest(Karishma, automation, 9876544434, test@123, no)">userRegTest(Karishma, automation, 9876544434, test@123, no)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Opencart_App_Test_Regression_Suite -->
                   </li>
                 </ul>
@@ -262,27 +316,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Opencart_App_Test_Regression_Suite" class="panel Opencart_App_Test_Regression_Suite">
-          <div class="suite-Opencart_App_Test_Regression_Suite-class-skipped">
+          <div class="suite-Opencart_App_Test_Regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.opencart.tests.LoginPageNegativeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username5, username@123)">
+                  </a> <!-- loginTest(username5, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username5,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest(username4, username@123)">
                   </a> <!-- loginTest(username4, username@123) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(username4,username@123)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null
-	at com.qa.opencart.factory.OptionsManager.getEdgeOption(OptionsManager.java:60)
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setUp(BaseTest.java:44)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -292,15 +380,109 @@
                   </a> <!-- loginTest(username6, username@123) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(username6,username@123)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null
-	at com.qa.opencart.factory.OptionsManager.getEdgeOption(OptionsManager.java:60)
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setUp(BaseTest.java:44)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-failed -->
+          <div class="suite-Opencart_App_Test_Regression_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.opencart.tests.LoginPageNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username5, username@123)">
+                  </a> <!-- loginTest(username5, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username5,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username4, username@123)">
+                  </a> <!-- loginTest(username4, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username4,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username4, username@123)">
+                  </a> <!-- loginTest(username4, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username4,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -310,77 +492,153 @@
                   </a> <!-- loginTest(username5, username@123) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(username5,username@123)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null
-	at com.qa.opencart.factory.OptionsManager.getEdgeOption(OptionsManager.java:60)
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setUp(BaseTest.java:44)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-skipped -->
-          <div class="suite-Opencart_App_Test_Regression_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.opencart.tests.RegisterPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userRegTest(Karishma, automation, 9876544434, test@123, no)">
-                  </a> <!-- userRegTest(Karishma, automation, 9876544434, test@123, no) -->
-                  <span class="method-name">userRegTest</span>
-                  <span class="parameters">(Karishma,automation,9876544434,test@123,no)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null
-	at com.qa.opencart.factory.OptionsManager.getFirefoxOption(OptionsManager.java:45)
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:58)
-	at com.qa.opencart.base.BaseTest.setUp(BaseTest.java:44)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="userRegTest(Rahul, yadav, 9876543233, test@123, yes)">
-                  </a> <!-- userRegTest(Rahul, yadav, 9876543233, test@123, yes) -->
-                  <span class="method-name">userRegTest</span>
-                  <span class="parameters">(Rahul,yadav,9876543233,test@123,yes)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null
-	at com.qa.opencart.factory.OptionsManager.getFirefoxOption(OptionsManager.java:45)
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:58)
-	at com.qa.opencart.base.BaseTest.setUp(BaseTest.java:44)
+                  <a name="loginTest(username6, username@123)">
+                  </a> <!-- loginTest(username6, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username6,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="userRegTest(Jyothi, auto, 9876522234, test@123, yes)">
-                  </a> <!-- userRegTest(Jyothi, auto, 9876522234, test@123, yes) -->
-                  <span class="method-name">userRegTest</span>
-                  <span class="parameters">(Jyothi,auto,9876522234,test@123,yes)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])&quot; because &quot;this.co&quot; is null
-	at com.qa.opencart.factory.OptionsManager.getFirefoxOption(OptionsManager.java:45)
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:58)
-	at com.qa.opencart.base.BaseTest.setUp(BaseTest.java:44)
+                  <a name="loginTest(username6, username@123)">
+                  </a> <!-- loginTest(username6, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username6,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username4, username@123)">
+                  </a> <!-- loginTest(username4, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username4,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username6, username@123)">
+                  </a> <!-- loginTest(username6, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username6,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(username5, username@123)">
+                  </a> <!-- loginTest(username5, username@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(username5,username@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.opencart.utils.ElementUtil.waitForVisibilityOfElement(ElementUtil.java:372)
+	at com.qa.opencart.pages.LoginPage.doLoginwithNegativeCredentials(LoginPage.java:75)
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -569,6 +827,38 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-passed -->
+          <div class="suite-Opencart_App_Test_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.opencart.tests.RegisterPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegTest(Rahul, yadav, 9876543233, test@123, yes)">
+                  </a> <!-- userRegTest(Rahul, yadav, 9876543233, test@123, yes) -->
+                  <span class="method-name">userRegTest</span>
+                  <span class="parameters">(Rahul,yadav,9876543233,test@123,yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegTest(Jyothi, auto, 9876522234, test@123, yes)">
+                  </a> <!-- userRegTest(Jyothi, auto, 9876522234, test@123, yes) -->
+                  <span class="method-name">userRegTest</span>
+                  <span class="parameters">(Jyothi,auto,9876522234,test@123,yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegTest(Karishma, automation, 9876544434, test@123, no)">
+                  </a> <!-- userRegTest(Karishma, automation, 9876544434, test@123, no) -->
+                  <span class="method-name">userRegTest</span>
+                  <span class="parameters">(Karishma,automation,9876544434,test@123,no)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-passed -->
         </div> <!-- panel Opencart_App_Test_Regression_Suite -->
         <div panel-name="test-xml-Opencart_App_Test_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -579,6 +869,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Opencart App Test Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.opencart.listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.opencart.listeners.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -598,13 +892,13 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Product Results Page Test --&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Register Page Test&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.opencart.tests.RegisterPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Register Page Test --&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Negative Login Test&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.opencart.tests.LoginPageNegativeTest&quot;/&gt;
     &lt;/classes&gt;
@@ -658,124 +952,160 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(37);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'productImagesTest')
-data.setCell(0, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
-data.setCell(0, 3, 2226);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(0, 3, 10548);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'productImagesTest')
-data.setCell(1, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
-data.setCell(1, 3, 1732);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(1, 3, 10509);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'productImagesTest')
-data.setCell(2, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
-data.setCell(2, 3, 1461);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(2, 3, 10500);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'productImagesTest')
-data.setCell(3, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
-data.setCell(3, 3, 1270);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(3, 3, 10495);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'productInfoTest')
-data.setCell(4, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
-data.setCell(4, 3, 1173);
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(4, 3, 10491);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'searchTest')
-data.setCell(5, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(5, 3, 982);
+data.setCell(5, 1, 'loginTest')
+data.setCell(5, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(5, 3, 10486);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(6, 3, 930);
+data.setCell(6, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(6, 3, 10485);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'accPageHeadersCountTest')
-data.setCell(7, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(7, 3, 58);
+data.setCell(7, 1, 'loginTest')
+data.setCell(7, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(7, 3, 10483);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'footerinformationLinkTest')
-data.setCell(8, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(8, 3, 40);
+data.setCell(8, 1, 'loginTest')
+data.setCell(8, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(8, 3, 10475);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'accPageHeadersTest')
-data.setCell(9, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(9, 3, 39);
+data.setCell(9, 1, 'loginTest')
+data.setCell(9, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(9, 3, 10474);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'accPageHeadersTestSort')
-data.setCell(10, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(10, 3, 38);
+data.setCell(10, 1, 'loginTest')
+data.setCell(10, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(10, 3, 10470);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'footercustomerServiceLinkTest')
-data.setCell(11, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(11, 3, 33);
+data.setCell(11, 1, 'loginTest')
+data.setCell(11, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
+data.setCell(11, 3, 10453);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'forgotPwdLinkExistTest')
-data.setCell(12, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(12, 3, 32);
+data.setCell(12, 1, 'searchTest')
+data.setCell(12, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(12, 3, 2877);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'informationExistTest')
-data.setCell(13, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(13, 3, 19);
+data.setCell(13, 1, 'userRegTest')
+data.setCell(13, 2, 'com.qa.opencart.tests.RegisterPageTest')
+data.setCell(13, 3, 2284);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'appLogoExistTest')
-data.setCell(14, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(14, 3, 19);
+data.setCell(14, 1, 'userRegTest')
+data.setCell(14, 2, 'com.qa.opencart.tests.RegisterPageTest')
+data.setCell(14, 3, 2246);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'isLogoutLinkExist')
-data.setCell(15, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(15, 3, 19);
+data.setCell(15, 1, 'userRegTest')
+data.setCell(15, 2, 'com.qa.opencart.tests.RegisterPageTest')
+data.setCell(15, 3, 2179);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'customerService')
+data.setCell(16, 1, 'loginTest')
 data.setCell(16, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(16, 3, 17);
+data.setCell(16, 3, 2059);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'isSearchFieldExist')
-data.setCell(17, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(17, 3, 16);
+data.setCell(17, 1, 'productImagesTest')
+data.setCell(17, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
+data.setCell(17, 3, 787);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'loginPageTitleTest')
-data.setCell(18, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(18, 3, 10);
+data.setCell(18, 1, 'productImagesTest')
+data.setCell(18, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
+data.setCell(18, 3, 632);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'loginPageURLTest')
-data.setCell(19, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(19, 3, 10);
+data.setCell(19, 1, 'productImagesTest')
+data.setCell(19, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
+data.setCell(19, 3, 600);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'accPageTitleTest')
-data.setCell(20, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(20, 3, 6);
+data.setCell(20, 1, 'productImagesTest')
+data.setCell(20, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
+data.setCell(20, 3, 597);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'accPageURLTest')
-data.setCell(21, 2, 'com.qa.opencart.tests.AccountsPageTest')
-data.setCell(21, 3, 6);
+data.setCell(21, 1, 'productInfoTest')
+data.setCell(21, 2, 'com.qa.opencart.tests.ProuctResultsPageTest')
+data.setCell(21, 3, 584);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'userRegTest')
-data.setCell(22, 2, 'com.qa.opencart.tests.RegisterPageTest')
-data.setCell(22, 3, 0);
+data.setCell(22, 1, 'accPageHeadersCountTest')
+data.setCell(22, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(22, 3, 77);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'userRegTest')
-data.setCell(23, 2, 'com.qa.opencart.tests.RegisterPageTest')
-data.setCell(23, 3, 0);
+data.setCell(23, 1, 'footerinformationLinkTest')
+data.setCell(23, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(23, 3, 42);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'userRegTest')
-data.setCell(24, 2, 'com.qa.opencart.tests.RegisterPageTest')
-data.setCell(24, 3, 0);
+data.setCell(24, 1, 'accPageHeadersTest')
+data.setCell(24, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(24, 3, 42);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'loginTest')
-data.setCell(25, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
-data.setCell(25, 3, 0);
+data.setCell(25, 1, 'accPageHeadersTestSort')
+data.setCell(25, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(25, 3, 39);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'loginTest')
-data.setCell(26, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
-data.setCell(26, 3, 0);
+data.setCell(26, 1, 'appLogoExistTest')
+data.setCell(26, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(26, 3, 37);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'loginTest')
-data.setCell(27, 2, 'com.qa.opencart.tests.LoginPageNegativeTest')
-data.setCell(27, 3, 0);
+data.setCell(27, 1, 'forgotPwdLinkExistTest')
+data.setCell(27, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(27, 3, 35);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'footercustomerServiceLinkTest')
+data.setCell(28, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(28, 3, 33);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'isLogoutLinkExist')
+data.setCell(29, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(29, 3, 19);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'loginPageTitleTest')
+data.setCell(30, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(30, 3, 18);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'informationExistTest')
+data.setCell(31, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(31, 3, 18);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'customerService')
+data.setCell(32, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(32, 3, 17);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'isSearchFieldExist')
+data.setCell(33, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(33, 3, 15);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'loginPageURLTest')
+data.setCell(34, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(34, 3, 7);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'accPageTitleTest')
+data.setCell(35, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(35, 3, 5);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'accPageURLTest')
+data.setCell(36, 2, 'com.qa.opencart.tests.AccountsPageTest')
+data.setCell(36, 3, 4);
 window.suiteTableData['Opencart_App_Test_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Opencart_App_Test_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Opencart_App_Test_Regression_Suite">
               </div> <!-- times-div-Opencart_App_Test_Regression_Suite -->
             </div> <!-- times-div -->
@@ -808,144 +1138,218 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">3133 ms</span>
+                <span class="method-start">9379 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginPageURLTest</span>
-                <span class="method-start">3145 ms</span>
+                <span class="method-start">9400 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">forgotPwdLinkExistTest</span>
-                <span class="method-start">3155 ms</span>
+                <span class="method-start">9408 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">appLogoExistTest</span>
-                <span class="method-start">3187 ms</span>
+                <span class="method-start">9444 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">informationExistTest</span>
-                <span class="method-start">3207 ms</span>
+                <span class="method-start">9482 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">customerService</span>
-                <span class="method-start">3227 ms</span>
+                <span class="method-start">9501 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">3245 ms</span>
+                <span class="method-start">9518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4176 ms</span>
+                <span class="method-start">11577 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.AccountsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">4279 ms</span>
+                <span class="method-start">11968 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">accSetUp</span>
-                <span class="method-start">7710 ms</span>
+                <span class="method-start">14023 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">accPageHeadersCountTest</span>
-                <span class="method-start">8285 ms</span>
+                <span class="method-start">16207 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accPageHeadersTest</span>
-                <span class="method-start">8344 ms</span>
+                <span class="method-start">16285 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accPageHeadersTestSort</span>
-                <span class="method-start">8383 ms</span>
+                <span class="method-start">16327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accPageTitleTest</span>
-                <span class="method-start">8422 ms</span>
+                <span class="method-start">16366 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accPageURLTest</span>
-                <span class="method-start">8428 ms</span>
+                <span class="method-start">16372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">footercustomerServiceLinkTest</span>
-                <span class="method-start">8434 ms</span>
+                <span class="method-start">16377 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">footerinformationLinkTest</span>
-                <span class="method-start">8468 ms</span>
+                <span class="method-start">16410 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">isLogoutLinkExist</span>
-                <span class="method-start">8509 ms</span>
+                <span class="method-start">16452 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">isSearchFieldExist</span>
-                <span class="method-start">8528 ms</span>
+                <span class="method-start">16472 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchTest</span>
-                <span class="method-start">8544 ms</span>
+                <span class="method-start">16487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9527 ms</span>
+                <span class="method-start">19364 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.ProuctResultsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">9613 ms</span>
+                <span class="method-start">19467 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">productInfoSetup</span>
-                <span class="method-start">13283 ms</span>
+                <span class="method-start">30267 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">productImagesTest(MacBook, MacBook Pro, 4)</span>
-                <span class="method-start">14490 ms</span>
+                <span class="method-start">30755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">productImagesTest(MacBook, MacBook Air, 4)</span>
-                <span class="method-start">16716 ms</span>
+                <span class="method-start">31543 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">productImagesTest(iMac, iMac, 3)</span>
-                <span class="method-start">18178 ms</span>
+                <span class="method-start">32144 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">productImagesTest(Samsung, Samsung SyncMaster 941BW, 1)</span>
-                <span class="method-start">19910 ms</span>
+                <span class="method-start">32776 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">productInfoTest(MacBook, MacBook Pro, Apple, In Stock, Product 18, 800, $2,000.00, $2,000.00)</span>
-                <span class="method-start">21180 ms</span>
+                <span class="method-start">33373 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22353 ms</span>
+                <span class="method-start">33958 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.RegisterPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(Firefox)</span>
-                <span class="method-start">22436 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">34051 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">regSetup</span>
+                <span class="method-start">36169 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">userRegTest(Rahul, yadav, 9876543233, test@123, yes)</span>
+                <span class="method-start">37496 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userRegTest(Karishma, automation, 9876544434, test@123, no)</span>
+                <span class="method-start">39743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userRegTest(Jyothi, auto, 9876522234, test@123, yes)</span>
+                <span class="method-start">42028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44208 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.LoginPageNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">44309 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username4, username@123)</span>
+                <span class="method-start">51375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username4, username@123)</span>
+                <span class="method-start">61925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username4, username@123)</span>
+                <span class="method-start">72426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setUp(Edge)</span>
-                <span class="method-start">22444 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-name">loginTest(username4, username@123)</span>
+                <span class="method-start">82936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username5, username@123)</span>
+                <span class="method-start">93641 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username5, username@123)</span>
+                <span class="method-start">104111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username5, username@123)</span>
+                <span class="method-start">114586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(username5, username@123)</span>
+                <span class="method-start">125072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username6, username@123)</span>
+                <span class="method-start">135758 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username6, username@123)</span>
+                <span class="method-start">146212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(username6, username@123)</span>
+                <span class="method-start">156687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(username6, username@123)</span>
+                <span class="method-start">167170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">177864 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -2,6 +2,7 @@ package com.qa.opencart.tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.AssertJUnit;
 
 import java.util.Collections;
@@ -13,7 +14,8 @@ import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
-
+import com.qa.opencart.listeners.TestAllureListener;
+@Listeners(TestAllureListener.class)
 public class AccountsPageTest extends BaseTest {
 
 	@BeforeClass

@@ -6,7 +6,7 @@
       <class name="com.qa.opencart.tests.LoginPageNegativeTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginTest" invocation-numbers="0 1 2"/>
+          <include name="loginTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageNegativeTest -->

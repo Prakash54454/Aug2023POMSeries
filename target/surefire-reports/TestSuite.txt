@@ -1,10 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 33, Failures: 2, Errors: 0, Skipped: 9, Time elapsed: 22.658 s <<< FAILURE! - in TestSuite
-setUp(com.qa.opencart.tests.RegisterPageTest)  Time elapsed: 1.26 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
+Tests run: 37, Failures: 3, Errors: 0, Skipped: 9, Time elapsed: 178.512 s <<< FAILURE! - in TestSuite
+loginTest(com.qa.opencart.tests.LoginPageNegativeTest)  Time elapsed: 10.706 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
 
-setUp(com.qa.opencart.tests.LoginPageNegativeTest)  Time elapsed: 0.004 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.chrome.ChromeOptions.addArguments(String[])" because "this.co" is null
+loginTest(com.qa.opencart.tests.LoginPageNegativeTest)  Time elapsed: 10.686 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
+
+loginTest(com.qa.opencart.tests.LoginPageNegativeTest)  Time elapsed: 10.693 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: div.alert.alert-danger.alert-dismissible (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/l2/yc1w_ppd06l...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58716/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 446bfc8000bb2e3e5778a00f4bad1a06
+	at com.qa.opencart.tests.LoginPageNegativeTest.loginTest(LoginPageNegativeTest.java:22)
 
