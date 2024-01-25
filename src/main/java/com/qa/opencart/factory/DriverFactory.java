@@ -26,7 +26,7 @@ public class DriverFactory {
 	Properties prop;
 	OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
-	// public static String highlight = null;
+	 public static String highlight = null;
 
 	public WebDriver initDriver(Properties prop) {
 
@@ -34,7 +34,7 @@ public class DriverFactory {
 		//String browserName = prop.getProperty("browser");
 		// String browserName = System.getProperty("browser");
 		System.out.println("The browsername is " + browserName);
-		// highlight = prop.getProperty("highlight");
+		highlight = prop.getProperty("highlight");
 
 		optionsManager = new OptionsManager(prop);
 
