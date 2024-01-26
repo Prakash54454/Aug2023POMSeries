@@ -26,7 +26,7 @@ public class DriverFactory {
 	Properties prop;
 	OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
-	 public static String highlight = null;
+	public static String highlight = null;
 
 	public WebDriver initDriver(Properties prop) {
 
