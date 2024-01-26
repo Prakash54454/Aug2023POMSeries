@@ -25,7 +25,6 @@ public class BaseTest {
 	DriverFactory df;
 	protected LoginPage loginPage;
 	protected AccountsPage accPage;
-
 	protected SearchResultsPage searchResultsPage;
 	protected ProductInfoPage productInfoPage;
 	protected RegisterPage registerPage;
