@@ -3,31 +3,19 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
-    <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
     <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="1" parallel="tests" name="Login Page Test(failed)" verbose="4">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
-          <include name="informationExistTest"/>
+          <include name="loginPageTitleTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
     </classes>
   </test> <!-- Login Page Test(failed) -->
-  <test thread-count="1" parallel="tests" name="Negative Login Test(failed)" verbose="4">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.qa.opencart.tests.LoginPageNegativeTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest" invocation-numbers="0 1 2"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.opencart.tests.LoginPageNegativeTest -->
-    </classes>
-  </test> <!-- Negative Login Test(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->

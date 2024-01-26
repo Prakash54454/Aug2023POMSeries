@@ -23,10 +23,8 @@ public class LoginPage {
 	private By logo = By.cssSelector("img[title='naveenopencart']");
 
 	private By registerLink = By.linkText("Register");
-	private By informationServiceLink = By
-			.xpath("//h5[normalize-space()='Information']");
-	private By customerServiceLink = By
-			.xpath("//h5[normalize-space()='Information']");
+	private By informationServiceLink = By.xpath("//h5[normalize-space()='Information']");
+	private By customerServiceLink = By.xpath("//h5[normalize-space()='Customer Service']");
 
 	private By errorMessage = By.cssSelector(".alert.alert-danger.alert-dismissible");
 
@@ -81,9 +79,9 @@ public class LoginPage {
 
 	public boolean isInformationFooterExist() {
 
-		return eleUtil.waitForVisibilityOfElement(informationServiceLink, AppConstants.MEDIUM_DEFAULT_WAIT).isDisplayed();
+		return eleUtil.waitForVisibilityOfElement(informationServiceLink, AppConstants.MEDIUM_DEFAULT_WAIT)
+				.isDisplayed();
 
-		
 	}
 
 	public boolean iscustomerServiceHeaderExist() {
