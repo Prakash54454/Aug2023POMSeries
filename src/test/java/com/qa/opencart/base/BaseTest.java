@@ -28,9 +28,7 @@ public class BaseTest {
 	protected SearchResultsPage searchResultsPage;
 	protected ProductInfoPage productInfoPage;
 	protected RegisterPage registerPage;
-
 	protected SoftAssert softAssert;
-
 	
 	@Parameters({ "browser" })
 	@BeforeTest
