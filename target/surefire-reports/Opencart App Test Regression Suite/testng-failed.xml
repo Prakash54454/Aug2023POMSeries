@@ -4,7 +4,20 @@
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
+    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
   </listeners>
+  <test thread-count="1" parallel="tests" name="Login Page Test(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
   <test thread-count="1" parallel="tests" name="Negative Login Test(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>

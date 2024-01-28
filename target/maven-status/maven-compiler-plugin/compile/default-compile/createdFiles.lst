@@ -4,6 +4,7 @@ com/qa/opencart/utils/JavaScriptUtil.class
 com/qa/opencart/pages/LoginPage.class
 com/qa/opencart/listeners/Retry.class
 com/qa/opencart/utils/ExcelUtil.class
+com/qa/opencart/listeners/TestAllureListener.class
 com/qa/opencart/pages/SearchResultsPage.class
 com/qa/opencart/pages/AccountsPage.class
 com/qa/opencart/utils/ElementUtil.class

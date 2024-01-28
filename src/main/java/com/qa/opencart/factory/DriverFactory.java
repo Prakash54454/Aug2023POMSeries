@@ -71,7 +71,7 @@ public class DriverFactory {
 			break;
 
 		case "safari":
-			tlDriver.set(new SafariDriver(optionsManager.getSafariOption()));
+			tlDriver.set(new SafariDriver());
 			//driver=new SafariDriver(optionsManager.getSafariOption());
 
 			break;

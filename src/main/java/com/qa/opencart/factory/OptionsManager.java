@@ -38,11 +38,11 @@ public class OptionsManager {
 		fo = new FirefoxOptions();
 
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
-			co.addArguments("--headless");
+			fo.addArguments("--headless");
 		}
 
 		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
-			co.addArguments("--incognito");
+			fo.addArguments("--incognito");
 		}
 
 		return fo;
@@ -53,11 +53,11 @@ public class OptionsManager {
 		eo = new EdgeOptions();
 
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
-			co.addArguments("--headless");
+			eo.addArguments("--headless");
 		}
 
 		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
-			co.addArguments("--incognito");
+			eo.addArguments("--incognito");
 		}
 
 		return eo;
@@ -65,20 +65,6 @@ public class OptionsManager {
 	}
 	
 	
-	public SafariOptions getSafariOption() {
-		so = new SafariOptions();
-
-		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
-			co.addArguments("--headless");
-		}
-
-		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
-			co.addArguments("--incognito");
-		}
-
-		return so;
-
-	}
-
+	
 
 }

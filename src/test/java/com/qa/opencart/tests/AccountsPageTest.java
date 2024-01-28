@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.listeners.TestAllureListener;
-@Listeners(TestAllureListener.class)
+
 public class AccountsPageTest extends BaseTest {
 
 	@BeforeClass
