@@ -147,10 +147,10 @@ public class DriverFactory {
 			else {
 				switch (envName.toLowerCase().trim()) {
 				case "qa":
-					ip = new FileInputStream("./src/test/resource/configs/config.qa.properties");
+					ip = new FileInputStream("./src/test/resources/configs/config.qa.properties");
 					break;
 				case "dev":
-					ip = new FileInputStream("./src/test/resource/configs/config.dev.properties");
+					ip = new FileInputStream("./src/test/resources/configs/config.dev.properties");
 					break;
 				case "stage":
 					ip = new FileInputStream("./src/test/resources/config/config.stage.properties");
