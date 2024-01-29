@@ -25,14 +25,15 @@ public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
 	OptionsManager optionsManager;
-	
+
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	public static String highlight = null;
 
 	public WebDriver initDriver(Properties prop) {
 
-		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("browser");
-		//String browserName = prop.getProperty("browser");
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
+		// String browserName = prop.getProperty("browser");
 		// String browserName = System.getProperty("browser");
 		System.out.println("The browsername is " + browserName);
 		highlight = prop.getProperty("highlight");
@@ -41,39 +42,39 @@ public class DriverFactory {
 
 		switch (browserName.trim().toLowerCase()) {
 		case "chrome":
-//			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
-//				// run it on grid:
-//				initRemoteDriver(browserName);
-//			} else {
-			// run it on local:
-		    tlDriver.set(new ChromeDriver(optionsManager.getChromeOption()));
-			//driver =new ChromeDriver(optionsManager.getChromeOption());
-			// }
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+				// run it on grid:
+				initRemoteDriver(browserName);
+			} else {
+				// run it on local:
+				tlDriver.set(new ChromeDriver(optionsManager.getChromeOption()));
+				// driver =new ChromeDriver(optionsManager.getChromeOption());
+			}
 			break;
 		case "firefox":
-//			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 //				// run it on grid:
-//				initRemoteDriver(browserName);
-//			} else {
+				initRemoteDriver(browserName);
+			} else {
 			// run it on local:
-			 tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOption()));
-			//driver =new FirefoxDriver(optionsManager.getFirefoxOption());
-			// }
+			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOption()));
+			// driver =new FirefoxDriver(optionsManager.getFirefoxOption());
+			 }
 			break;
 
 		case "edge":
-//			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 //				// run it on grid:
-//				initRemoteDriver(browserName);
-//			} else {
+				initRemoteDriver(browserName);
+		} else {
 			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOption()));
-			//driver =new EdgeDriver(optionsManager.getEdgeOption());
-			// }
+			// driver =new EdgeDriver(optionsManager.getEdgeOption());
+			 }
 			break;
 
 		case "safari":
 			tlDriver.set(new SafariDriver());
-			//driver=new SafariDriver(optionsManager.getSafariOption());
+			// driver=new SafariDriver(optionsManager.getSafariOption());
 
 			break;
 		default:
@@ -134,8 +135,9 @@ public class DriverFactory {
 		prop = new Properties();
 
 		String envName = System.getProperty("env");
-		
-		//String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("browser");
+
+		// String browserName = System.getProperty("browser")!=null ?
+		// System.getProperty("browser") :prop.getProperty("browser");
 		System.out.println("env name is: " + envName);
 
 		try {
