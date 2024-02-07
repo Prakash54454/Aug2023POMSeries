@@ -3,19 +3,86 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
-    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
+    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
   </listeners>
   <test thread-count="1" parallel="tests" name="Login Page Test(failed)" verbose="4">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="informationExistTest"/>
           <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
           <include name="setUp"/>
+          <include name="customerService"/>
+          <include name="loginPageURLTest"/>
+          <include name="appLogoExistTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
     </classes>
   </test> <!-- Login Page Test(failed) -->
+  <test thread-count="1" parallel="tests" name="Accounts Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.tests.AccountsPageTest">
+        <methods>
+          <include name="footerinformationLinkTest"/>
+          <include name="accPageTitleTest"/>
+          <include name="accSetUp"/>
+          <include name="setUp"/>
+          <include name="isSearchFieldExist"/>
+          <include name="accPageURLTest"/>
+          <include name="isLogoutLinkExist"/>
+          <include name="accPageHeadersTest"/>
+          <include name="footercustomerServiceLinkTest"/>
+          <include name="accPageHeadersTestSort"/>
+          <include name="searchTest"/>
+          <include name="accPageHeadersCountTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
+    </classes>
+  </test> <!-- Accounts Page Test(failed) -->
+  <test thread-count="1" parallel="tests" name="Product Results Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.tests.ProuctResultsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="productImagesTest"/>
+          <include name="productInfoSetup"/>
+          <include name="productInfoTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.ProuctResultsPageTest -->
+    </classes>
+  </test> <!-- Product Results Page Test(failed) -->
+  <test thread-count="1" parallel="tests" name="Register Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.tests.RegisterPageTest">
+        <methods>
+          <include name="userRegTest"/>
+          <include name="setUp"/>
+          <include name="regSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.RegisterPageTest -->
+    </classes>
+  </test> <!-- Register Page Test(failed) -->
+  <test thread-count="1" parallel="tests" name="Negative Login Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageNegativeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageNegativeTest -->
+    </classes>
+  </test> <!-- Negative Login Test(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->

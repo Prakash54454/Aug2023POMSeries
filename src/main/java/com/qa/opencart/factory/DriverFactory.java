@@ -19,6 +19,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.qa.opencart.exception.FrameworkException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class DriverFactory {
 
@@ -27,6 +29,7 @@ public class DriverFactory {
 	OptionsManager optionsManager;
 
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
+	 private static final Logger log = LogManager.getLogger(DriverFactory.class);
 	public static String highlight = null;
 
 	public WebDriver initDriver(Properties prop) {
@@ -36,6 +39,7 @@ public class DriverFactory {
 		// String browserName = prop.getProperty("browser");
 		// String browserName = System.getProperty("browser");
 		System.out.println("The browsername is " + browserName);
+		log.info("browser name is:" + browserName);
 		highlight = prop.getProperty("highlight");
 
 		optionsManager = new OptionsManager(prop);
@@ -44,9 +48,11 @@ public class DriverFactory {
 		case "chrome":
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				// run it on grid:
+				log.info("Running it on remote machine");
 				initRemoteDriver(browserName);
 			} else {
 				// run it on local:
+				log.info("running it on local");
 				tlDriver.set(new ChromeDriver(optionsManager.getChromeOption()));
 				// driver =new ChromeDriver(optionsManager.getChromeOption());
 			}
@@ -139,10 +145,12 @@ public class DriverFactory {
 		// String browserName = System.getProperty("browser")!=null ?
 		// System.getProperty("browser") :prop.getProperty("browser");
 		System.out.println("env name is: " + envName);
+		log.info("env name is : " + envName);
 
 		try {
 			if (envName == null) {
 				System.out.println("your env is null...hence running tests on QA env...");
+				log.warn("your env is null...hence running tests on QA env...");
 				ip = new FileInputStream("./src/test/resources/config/config.qa.properties");
 			}
 
@@ -166,6 +174,7 @@ public class DriverFactory {
 
 				default:
 					System.out.println("please pass the right env name..." + envName);
+					log.error("wrong env name : " + envName);
 					throw new FrameworkException("Wrong Env Name: " + envName);
 				}
 			}

@@ -2,11 +2,12 @@ package com.qa.opencart.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import io.qameta.allure.Step;
 
@@ -27,6 +28,8 @@ public class LoginPage {
 	private By customerServiceLink = By.xpath("//h5[normalize-space()='Customer Service']");
 
 	private By errorMessage = By.cssSelector(".alert.alert-danger.alert-dismissible");
+	
+	 private static final Logger log = LogManager.getLogger(LoginPage.class);
 
 	// page const...
 	public LoginPage(WebDriver driver) {
@@ -40,6 +43,7 @@ public class LoginPage {
 	public String getLoginPageTitle() {
 		String title = eleUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_TITLE, AppConstants.SHORT_DEFAULT_WAIT);
 		System.out.println("login page title:" + title);
+		log.info("login page title:" + title);
 		return title;
 	}
 
@@ -47,6 +51,7 @@ public class LoginPage {
 	public String getLoginPageURL() {
 		String url = eleUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL_FRACTION, AppConstants.SHORT_DEFAULT_WAIT);
 		System.out.println("login page url:" + url);
+		log.info("login page url:" + url);
 		return url;
 	}
 
@@ -64,6 +69,7 @@ public class LoginPage {
 	@Step("username is : {0} and password {1} ")
 	public AccountsPage doLogin(String username, String pwd) {
 		System.out.println("creds are: " + username + " : " + pwd);
+		log.info("creds are : " + username + " : " + pwd);
 		eleUtil.waitForVisibilityOfElement(userName, AppConstants.MEDIUM_DEFAULT_WAIT).sendKeys(username);
 		eleUtil.dosendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);

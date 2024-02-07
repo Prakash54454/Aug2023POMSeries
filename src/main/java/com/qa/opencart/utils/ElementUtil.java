@@ -22,6 +22,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.opencart.exception.FrameworkException;
 import com.qa.opencart.factory.DriverFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import io.qameta.allure.Step;
 
@@ -29,6 +31,9 @@ public class ElementUtil {
 
 	private static WebDriver driver;
 	private JavaScriptUtil jsUtil;
+	
+	 private static final Logger log = LogManager.getLogger(ElementUtil.class);
+
 
 	public ElementUtil(WebDriver driver) {
 
@@ -74,6 +79,13 @@ public class ElementUtil {
 
 	}
 
+	private void logLocator(By locator) {
+		log.info("locator : " + locator);
+	}
+	
+	private void logLocator(By locator, String value) {
+		log.info("locator : " + locator + "----- value --- " + value);
+	}
 	private void isHighlight(WebElement element) {
 		if (Boolean.parseBoolean(DriverFactory.highlight)) {
 			jsUtil.flash(element);

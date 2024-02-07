@@ -14,6 +14,8 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Epic("Epic 100: Design open cart login page")
 @Story("US 101: Login page features")
@@ -21,12 +23,15 @@ import io.qameta.allure.Story;
 @Listeners(TestAllureListener.class)
 public class LoginPageTest extends BaseTest {
 	
+	 private static final Logger log = LogManager.getLogger(LoginPageTest.class);
+	
 	@Description("login page title test...")
 	@Severity(SeverityLevel.MINOR)
 	@Test(priority=1)
 	public void loginPageTitleTest()
 	{
 		String actTitle = loginPage.getLoginPageTitle();
+		log.info("actual login page title: " + actTitle);
 		Assert.assertEquals(actTitle, AppConstants.LOGIN_PAGE_TITLE);
 		
 	}
